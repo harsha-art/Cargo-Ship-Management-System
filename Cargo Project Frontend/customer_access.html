@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tabs</title>
+</head>
+<body>
+  <div class="mytabs">
+    <input type="radio" id="tabfree" name="mytabs" checked="checked">
+    <label for="tabfree">Cargo</label>
+    <div class="tab">
+      <h2 style="font-size:4vh ;">Add Cargo</h2>
+      <h3>Sender Details:</h3>
+      <b style="font-size:2vh ;"> Sender Name:</b>
+       <input type="text" ><br>
+       <b style="font-size:2vh ;">Sender Mob:</b>
+       <input type="text" ><br>
+       <b style="font-size:2vh ;"> Sender Email:</b>
+       <input type="text" ><br><br>
+       <b style="font-size:2vh ;"> Sender Address:</b>
+      <textarea rows="3" cols="39"></textarea><br>
+       <h3>Receiver Details:</h3>
+      <b style="font-size:2vh ;"> Receiver Name:</b>
+       <input type="text" ><br>
+       <b style="font-size:2vh ;">Receiver Mobile:</b>
+       <input type="text" ><br>
+       <b style="font-size:2vh ;"> Receiver Email:</b>
+       <input type="text" ><br><br>
+       <b style="font-size:2vh ;"> Receiver Address:</b>
+       <textarea rows="3" cols="39"></textarea><br><br>
+       <input type="submit" value="Search" style="font-size:3vh ; color: black;">
+    </div>
+
+
+    <input type="radio" id="tabsi" name="mytabs">
+    <label for="tabsi">Order Cargo</label>
+    <div class="tab">
+      <h2 style="font-size:4vh ;">Order Cargo</h2>
+      <b>Name:</b>
+       <input type="text" ><br>
+     <b> Order Id:</b>
+       <input type="text" ><br>
+       <b> Quantity:</b>
+       <input type="text" ><br>
+       <b style="padding-top: 4vh;">Warehouse Places</b>
+       <select >
+        <option>Chennai</option>
+        <option>Coimbatore</option>
+        <option>Goa</option>
+        <option>Kochi</option>
+        <option>Kandla</option>
+        <option>Mangaluru</option>
+        <option>Mumbai</option>
+        <option>Port Blair</option>
+        <option>Tuticorin</option>
+        <option>Vishakapatnam</option>
+        
+       </select>
+      <br><br><br><input type="submit" value="Order" style="font-size:3vh ; color: black;">
+    </div>
+
+    <input type="radio" id="tabsilver" name="mytabs">
+    <label for="tabsilver">Track Cargo</label>
+    <div class="tab">
+      <h2 style="font-size:4vh ;">Track  Cargo</h2><br>
+     <b> Order Id:</b>
+       <input type="text" >
+      <br><br><br><input type="submit" value="Search"  style="font-size:3vh ; color: black;">
+    </div>
+
+    <input type="radio" id="tabdi" name="mytabs">
+    <label for="tabdi">Logout</label>
+    
+
+
+    
+  </div>
+</body>
+</html>
+
+<style>
+    body {
+      background: #ccc;
+      font-family: 'Roboto', sans-serif;
+      background-image: url(./ocean1.jpg);
+  }
+  .mytabs {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 950px;
+      margin: 50px auto;
+      padding: 25px;
+  }
+  .mytabs input[type="radio"] {
+      display: none;
+  }
+  .mytabs label {
+      padding: 25px;
+      background: #e2e2e2;
+      font-weight: bold;
+  }
+  
+  .mytabs .tab {
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+      order: 1;
+      display: none; background: linear-gradient(45deg, white 0%, skyblue);
+  }
+  .mytabs .tab h2 {
+      font-size: 3em;
+  }
+  
+  .mytabs input[type='radio']:checked + label + .tab {
+      display: block;
+  }
+  
+  .mytabs input[type="radio"]:checked + label {
+      background: #fff;
+  }
+  b{
+      padding: 3vh;
+      font-size: 3vh;
+      width: 100px;
+      display: inline-block;
+      
+  }
+  input[type=text]{
+      width: 300px;
+      font-size: 3vh;
+      font-weight:bold;
+      align-content: center;
+      display: inline-block;
+  } 
+  input[type=submit]{
+      font-weight: bold;
+      margin-left: 3vh;
+  }
+  input[type=submit]:hover{
+  background: lightsalmon;
+  }
+  h2{
+      padding-left: 3vh;
+      color: navy;
+      font-size: 2vh;
+  }
+  h3{
+      padding-left: 3vh;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  select{
+    font-size: 3vh;
+    margin-left: 2vh;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     
+}
+  </style>

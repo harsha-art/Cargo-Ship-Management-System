@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tabs</title>
+</head>
+<body>
+  <div class="mytabs">
+    <input type="radio" id="tabfree" name="mytabs" checked="checked">
+    <label for="tabfree">Add Warhouse</label>
+    <div class="tab">
+      <h2 style="font-size: 4vh;">Warhouse</h2>
+      <b style="font-size:3vh ;"> ID:</b>
+       <input type="text" ><br>
+       <b style="font-size:3vh ;">Place:</b>
+       <input type="text" ><br>
+       <b style="font-size:3vh ;">name:</b>
+       <input type="text" ><br>
+       <b style="font-size:3vh ;"> Capacity:</b>
+       <input type="text" ><br>
+       <b style="font-size:3vh ;"> Mobile:</b>
+       <input type="text" ><br>
+       <br><input type="submit" value="Submit" style="font-size:3vh ; color: black;">
+    </div>
+
+    <input type="radio" id="tabsilver" name="mytabs">
+    <label for="tabsilver">View</label>
+    <div class="tab">
+      <h2 style="margin-left: 25vh; font-size: 4vh;">View Order</h2>
+     
+    </div>
+
+    <input type="radio" id="tabgold" name="mytabs">
+    <label for="tabgold">Track</label>
+    <div class="tab">
+      <h2 style="font-size: 4vh;">Track Cargo</h2>
+      <b> Order Id:</b>
+       <input type="text" >
+      <br><br><br><input type="submit" value="Search" style="font-size:3vh ; color: black;">
+    </div>
+    
+    <input type="radio" id="tabdi" name="mytabs">
+    <label for="tabdi">Logout</label>
+    <div class="tab">
+      
+    </div>
+
+  </div>
+</body>
+</html>
+
+<style>
+  body {
+    background: #ccc;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(./ocean1.jpg);
+}
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 950px;
+    margin: 50px auto;
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    order: 1;
+    display: none; background: linear-gradient(45deg, white 0%, skyblue);
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}
+b{
+    padding: 3vh;
+    font-size: 3vh;
+    width: 100px;
+    display: inline-block;
+    
+}
+input[type=text]{
+    width: 300px;
+    font-size: 3vh;
+    font-weight:bold;
+    align-content: center;
+    display: inline-block;
+} 
+input[type=submit]{
+    font-weight: bold;
+    margin-left: 3vh;
+}
+input[type=submit]:hover{
+background: lightsalmon;
+}
+h2{
+    padding-left: 3vh;
+    color: navy;
+    font-size: 2vh;
+}
+h3{
+    padding-left: 3vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+</style>
